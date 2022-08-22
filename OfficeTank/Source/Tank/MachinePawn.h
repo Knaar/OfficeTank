@@ -10,6 +10,7 @@
 #include "Components/AudioComponent.h"
 #include "HealthComponent.h"
 #include "Scorable.h"
+#include "Components/WidgetComponent.h"
 #include "MachinePawn.generated.h"
 
 UCLASS()
@@ -49,6 +50,7 @@ protected:
 
 	virtual void BeginPlay() override;
 
+
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadWrite, Category = "Components")
 	class UHealthComponent* HealthComponent;
 
@@ -61,6 +63,8 @@ protected:
 
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadWrite, Category = "Components")
 	UAudioComponent* AudioEffectDamaged;
+
+	
 
 
 	

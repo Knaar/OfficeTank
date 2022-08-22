@@ -13,6 +13,7 @@
 #include "Components/BoxComponent.h"
 #include "Engine/TargetPoint.h"
 #include "Components/TextRenderComponent.h"
+#include "Components/WidgetComponent.h"
 
 
 ATankPawn::ATankPawn()
@@ -44,11 +45,12 @@ ATankPawn::ATankPawn()
 
 	HitCollider = CreateDefaultSubobject<UBoxComponent>(TEXT("Hit Collider"));
 	HitCollider->SetupAttachment(BodyMesh);
-
-	
 	
 	HealthTextToEnemyComponent = CreateDefaultSubobject<UTextRenderComponent>(TEXT("TextToEnemyHealth"));
 	HealthTextToEnemyComponent->SetupAttachment(TurretMesh);
+
+	HealthBar = CreateDefaultSubobject<UWidgetComponent>("HealthBar");
+	HealthBar->SetupAttachment(BodyMesh);
 }
 
 void ATankPawn::MoveForward(float Value)

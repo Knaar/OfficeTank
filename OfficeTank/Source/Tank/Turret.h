@@ -41,7 +41,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ammo")
 	TSubclassOf<ACannon> CannonClass;
 
-	
+	UPROPERTY(BlueprintReadOnly, EditAnywhere)
+		UWidgetComponent* HealthBar;
 
 	UPROPERTY()
 	class APawn* PlayerPawn;

@@ -1,0 +1,17 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "e:\\unrealprojects\\officetank\\officetank\\source\\tank\\projectilepool.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\unrealprojects\\officetank\\officetank\\intermediate\\build\\win64\\tankeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "e:\\unrealprojects\\officetank\\officetank\\intermediate\\build\\win64\\unrealeditor\\development\\tank\\definitions.tank.h",
+            "e:\\unrealprojects\\officetank\\officetank\\source\\tank\\projectilepool.h",
+            "e:\\unrealprojects\\officetank\\officetank\\intermediate\\build\\win64\\unrealeditor\\inc\\tank\\projectilepool.generated.h",
+            "e:\\unrealprojects\\officetank\\officetank\\source\\tank\\projectile.h",
+            "e:\\unrealprojects\\officetank\\officetank\\intermediate\\build\\win64\\unrealeditor\\inc\\tank\\projectile.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

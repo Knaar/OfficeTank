@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Tank",
+			"Path": "E:\\UnrealProjects\\OfficeTank\\OfficeTank\\Source\\Tank.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "TankEditor",
+			"Path": "E:\\UnrealProjects\\OfficeTank\\OfficeTank\\Source\\TankEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

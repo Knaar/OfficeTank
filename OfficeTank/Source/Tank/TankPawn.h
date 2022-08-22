@@ -84,7 +84,8 @@ protected:
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadWrite, Category = "Components")
 	class UBoxComponent *HitCollider;
 
-	
+	UPROPERTY(BlueprintReadOnly, EditAnywhere)
+	UWidgetComponent* HealthBar;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Category")
 	class UTextRenderComponent* HealthTextToEnemyComponent;

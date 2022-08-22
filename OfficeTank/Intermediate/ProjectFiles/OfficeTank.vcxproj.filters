@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\OfficeTank.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Tank.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\TankEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Config\HoloLens">
+      <UniqueIdentifier>{4C8DD267-CDE7-336F-8602-F5F485D22BAB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\HoloLens\HoloLensEngine.ini">
+      <Filter>Config\HoloLens</Filter>
+    </None>
+    <Filter Include="Source\Tank">
+      <UniqueIdentifier>{5942346E-68C0-3D69-BC23-05280F817D6F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Tank\AmmoBox.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\AmmoBox.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Tank\BulletsBox.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\BulletsBox.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Tank\Cannon.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\Cannon.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Tank\DamageTaker.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\DamageTaker.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Tank\GameStructs.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\GameStructs.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Tank\HealthComponent.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\HealthComponent.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Tank\MachinePawn.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\MachinePawn.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Tank\MapLoader.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\MapLoader.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Tank\PhysicProjectile.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\PhysicProjectile.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Tank\PhysicsComponent.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\PhysicsComponent.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Tank\Projectile.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\Projectile.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Tank\ProjectilePool.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\ProjectilePool.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Tank\Scorable.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\Scorable.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\Tank\Tank.Build.cs">
+      <Filter>Source\Tank</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Tank\Tank.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\Tank.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Tank\TankAIController.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\TankAIController.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Tank\TankController.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\TankController.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Tank\TankFactory.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\TankFactory.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Tank\TankGameModeBase.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\TankGameModeBase.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Tank\TankPawn.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\TankPawn.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Tank\Turret.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\Turret.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"E:\\UnrealProjects\\OfficeTank\\OfficeTank\\Source\\Tank\\Tank.Build.cs",
+		"E:\\UnrealProjects\\OfficeTank\\OfficeTank\\Source\\Tank.Target.cs",
+		"E:\\UnrealProjects\\OfficeTank\\OfficeTank\\Source\\TankEditor.Target.cs"
+	],
+	"EngineVersion": "5.0.3"
+}

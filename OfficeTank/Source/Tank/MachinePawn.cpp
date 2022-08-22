@@ -10,17 +10,21 @@
 #include "Cannon.h"
 #include "Components\ArrowComponent.h"
 #include "HealthComponent.h"
+#include "Components/WidgetComponent.h"
+
+
 
 AMachinePawn::AMachinePawn()
 {
 	PrimaryActorTick.bCanEverTick = true;
 
-	
+		
 	AudioEffect = CreateDefaultSubobject<UAudioComponent>(TEXT("AudoiEffect"));
 	AudioEffect->SetAutoActivate(false);
 	
 	AudioEffectDamaged = CreateDefaultSubobject<UAudioComponent>(TEXT("AudoiEffectDamaged"));
 	AudioEffectDamaged->SetAutoActivate(false);
+	
 	
 
 

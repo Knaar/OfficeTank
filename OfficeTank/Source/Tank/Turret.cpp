@@ -45,6 +45,8 @@ ATurret::ATurret()
 		BodyMesh->SetStaticMesh(BodyMeshTemp);
 	}
 
+	HealthBar = CreateDefaultSubobject<UWidgetComponent>("HealthBar");
+	HealthBar->SetupAttachment(BodyMesh);
 }
 
 FVector ATurret::GetEyesPosition()
