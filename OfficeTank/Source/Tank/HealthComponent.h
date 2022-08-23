@@ -22,19 +22,23 @@ public:
 
 
 	void TakeDamage(FDamageData DamageData);
+
+	UFUNCTION(BlueprintCallable)
 	float GetHealth()const;
+
+	UFUNCTION(BlueprintCallable)
 	float GetHealthState()const;
+
+	UFUNCTION(BlueprintCallable)
 	void AddHealth(float AditionalHealthValue);
 
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Health Values")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health Values")
 	float MaxHealth = 25.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health Values")
+	float CurrentHealth;
 
 protected:
 	virtual void BeginPlay()override;
-
-
-	UPROPERTY()
-		float CurrentHealth;
-		
 };

@@ -40,6 +40,8 @@ static inline void FOnGameOver_DelegateWrapper(const FMulticastScriptDelegate& O
 	DECLARE_FUNCTION(execSetPatrollingPoints);
 
 
+#define FID_OfficeTank_Source_Tank_TankPawn_h_21_EVENT_PARMS
+#define FID_OfficeTank_Source_Tank_TankPawn_h_21_CALLBACK_WRAPPERS
 #define FID_OfficeTank_Source_Tank_TankPawn_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATankPawn(); \
@@ -82,12 +84,16 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ATankPawn)
 
 
-#define FID_OfficeTank_Source_Tank_TankPawn_h_18_PROLOG
+#define FID_OfficeTank_Source_Tank_TankPawn_h_18_PROLOG \
+	FID_OfficeTank_Source_Tank_TankPawn_h_21_EVENT_PARMS
+
+
 #define FID_OfficeTank_Source_Tank_TankPawn_h_21_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FID_OfficeTank_Source_Tank_TankPawn_h_21_SPARSE_DATA \
 	FID_OfficeTank_Source_Tank_TankPawn_h_21_RPC_WRAPPERS \
+	FID_OfficeTank_Source_Tank_TankPawn_h_21_CALLBACK_WRAPPERS \
 	FID_OfficeTank_Source_Tank_TankPawn_h_21_INCLASS \
 	FID_OfficeTank_Source_Tank_TankPawn_h_21_STANDARD_CONSTRUCTORS \
 public: \
@@ -99,6 +105,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FID_OfficeTank_Source_Tank_TankPawn_h_21_SPARSE_DATA \
 	FID_OfficeTank_Source_Tank_TankPawn_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_OfficeTank_Source_Tank_TankPawn_h_21_CALLBACK_WRAPPERS \
 	FID_OfficeTank_Source_Tank_TankPawn_h_21_INCLASS_NO_PURE_DECLS \
 	FID_OfficeTank_Source_Tank_TankPawn_h_21_ENHANCED_CONSTRUCTORS \
 private: \

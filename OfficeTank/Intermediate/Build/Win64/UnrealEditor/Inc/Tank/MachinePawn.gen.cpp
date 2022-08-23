@@ -35,6 +35,11 @@ void EmptyLinkFunctionForGeneratedCodeMachinePawn() {}
 		P_THIS->ShowScore(Z_Param_Value);
 		P_NATIVE_END;
 	}
+	static FName NAME_AMachinePawn_TakeDamageEvent = FName(TEXT("TakeDamageEvent"));
+	void AMachinePawn::TakeDamageEvent()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AMachinePawn_TakeDamageEvent),NULL);
+	}
 	void AMachinePawn::StaticRegisterNativesAMachinePawn()
 	{
 		UClass* Class = AMachinePawn::StaticClass();
@@ -108,6 +113,28 @@ void EmptyLinkFunctionForGeneratedCodeMachinePawn() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AMachinePawn_TakeDamageEvent_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMachinePawn_TakeDamageEvent_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "MachinePawn.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMachinePawn_TakeDamageEvent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMachinePawn, nullptr, "TakeDamageEvent", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMachinePawn_TakeDamageEvent_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMachinePawn_TakeDamageEvent_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMachinePawn_TakeDamageEvent()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AMachinePawn_TakeDamageEvent_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(AMachinePawn);
 	UClass* Z_Construct_UClass_AMachinePawn_NoRegister()
 	{
@@ -156,6 +183,7 @@ void EmptyLinkFunctionForGeneratedCodeMachinePawn() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMachinePawn_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AMachinePawn_DamageTaked, "DamageTaked" }, // 230588454
 		{ &Z_Construct_UFunction_AMachinePawn_ShowScore, "ShowScore" }, // 765721783
+		{ &Z_Construct_UFunction_AMachinePawn_TakeDamageEvent, "TakeDamageEvent" }, // 1617272926
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMachinePawn_Statics::Class_MetaDataParams[] = {
@@ -258,9 +286,9 @@ void EmptyLinkFunctionForGeneratedCodeMachinePawn() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OfficeTank_Source_Tank_MachinePawn_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMachinePawn, AMachinePawn::StaticClass, TEXT("AMachinePawn"), &Z_Registration_Info_UClass_AMachinePawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMachinePawn), 3012350282U) },
+		{ Z_Construct_UClass_AMachinePawn, AMachinePawn::StaticClass, TEXT("AMachinePawn"), &Z_Registration_Info_UClass_AMachinePawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMachinePawn), 1465500335U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OfficeTank_Source_Tank_MachinePawn_h_1147470869(TEXT("/Script/Tank"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OfficeTank_Source_Tank_MachinePawn_h_1692937629(TEXT("/Script/Tank"),
 		Z_CompiledInDeferFile_FID_OfficeTank_Source_Tank_MachinePawn_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OfficeTank_Source_Tank_MachinePawn_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

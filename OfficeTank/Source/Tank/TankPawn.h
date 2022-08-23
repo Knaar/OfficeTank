@@ -32,6 +32,8 @@ public:
 
 	void Die();
 
+	UFUNCTION(BlueprintImplementableEvent)
+	void DieEvent();
 	
 	void SwapWeapon();
 

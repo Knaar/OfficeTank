@@ -24,10 +24,6 @@ AMachinePawn::AMachinePawn()
 	
 	AudioEffectDamaged = CreateDefaultSubobject<UAudioComponent>(TEXT("AudoiEffectDamaged"));
 	AudioEffectDamaged->SetAutoActivate(false);
-	
-	
-
-
 }
 
 void AMachinePawn::BeginPlay()
@@ -77,8 +73,10 @@ void AMachinePawn::ShowScore(float Value)
 void AMachinePawn::TakeDamage(FDamageData DamageData)
 {
 	HealthComponent->TakeDamage(DamageData);
+	TakeDamageEvent();
 	AudioEffectDamaged->Play();
 	SetHealh();
+
 }
 
 void AMachinePawn::DamageTaked(float DamageValue)

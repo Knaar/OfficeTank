@@ -77,10 +77,22 @@
     <ClInclude Include="..\..\Source\Tank\MachinePawn.h">
       <Filter>Source\Tank</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Tank\MainMenuWidget.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\MainMenuWidget.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Tank\MapLoader.cpp">
       <Filter>Source\Tank</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Tank\MapLoader.h">
+      <Filter>Source\Tank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Tank\MyHUD.cpp">
+      <Filter>Source\Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\MyHUD.h">
       <Filter>Source\Tank</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Tank\PhysicProjectile.cpp">
@@ -157,6 +169,15 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\Tank\Turret.h">
       <Filter>Source\Tank</Filter>
+    </ClInclude>
+    <Filter Include="Source\Tank\Widgets">
+      <UniqueIdentifier>{C25D9998-19C4-3D4B-8D52-869FADF21E4D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Tank\Widgets\DeathWidget.cpp">
+      <Filter>Source\Tank\Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tank\Widgets\DeathWidget.h">
+      <Filter>Source\Tank\Widgets</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -26,6 +26,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execShowScore);
 
 
+#define FID_OfficeTank_Source_Tank_MachinePawn_h_19_EVENT_PARMS
+#define FID_OfficeTank_Source_Tank_MachinePawn_h_19_CALLBACK_WRAPPERS
 #define FID_OfficeTank_Source_Tank_MachinePawn_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMachinePawn(); \
@@ -70,12 +72,16 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMachinePawn)
 
 
-#define FID_OfficeTank_Source_Tank_MachinePawn_h_16_PROLOG
+#define FID_OfficeTank_Source_Tank_MachinePawn_h_16_PROLOG \
+	FID_OfficeTank_Source_Tank_MachinePawn_h_19_EVENT_PARMS
+
+
 #define FID_OfficeTank_Source_Tank_MachinePawn_h_19_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FID_OfficeTank_Source_Tank_MachinePawn_h_19_SPARSE_DATA \
 	FID_OfficeTank_Source_Tank_MachinePawn_h_19_RPC_WRAPPERS \
+	FID_OfficeTank_Source_Tank_MachinePawn_h_19_CALLBACK_WRAPPERS \
 	FID_OfficeTank_Source_Tank_MachinePawn_h_19_INCLASS \
 	FID_OfficeTank_Source_Tank_MachinePawn_h_19_STANDARD_CONSTRUCTORS \
 public: \
@@ -87,6 +93,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FID_OfficeTank_Source_Tank_MachinePawn_h_19_SPARSE_DATA \
 	FID_OfficeTank_Source_Tank_MachinePawn_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_OfficeTank_Source_Tank_MachinePawn_h_19_CALLBACK_WRAPPERS \
 	FID_OfficeTank_Source_Tank_MachinePawn_h_19_INCLASS_NO_PURE_DECLS \
 	FID_OfficeTank_Source_Tank_MachinePawn_h_19_ENHANCED_CONSTRUCTORS \
 private: \

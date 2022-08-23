@@ -14,8 +14,20 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define TANK_HealthComponent_generated_h
 
 #define FID_OfficeTank_Source_Tank_HealthComponent_h_12_SPARSE_DATA
-#define FID_OfficeTank_Source_Tank_HealthComponent_h_12_RPC_WRAPPERS
-#define FID_OfficeTank_Source_Tank_HealthComponent_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_OfficeTank_Source_Tank_HealthComponent_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execAddHealth); \
+	DECLARE_FUNCTION(execGetHealthState); \
+	DECLARE_FUNCTION(execGetHealth);
+
+
+#define FID_OfficeTank_Source_Tank_HealthComponent_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execAddHealth); \
+	DECLARE_FUNCTION(execGetHealthState); \
+	DECLARE_FUNCTION(execGetHealth);
+
+
 #define FID_OfficeTank_Source_Tank_HealthComponent_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUHealthComponent(); \

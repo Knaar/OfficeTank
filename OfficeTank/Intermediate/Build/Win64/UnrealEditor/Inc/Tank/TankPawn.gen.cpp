@@ -86,6 +86,11 @@ void EmptyLinkFunctionForGeneratedCodeTankPawn() {}
 		P_THIS->SetPatrollingPoints(Z_Param_NewPatrollingPoint);
 		P_NATIVE_END;
 	}
+	static FName NAME_ATankPawn_DieEvent = FName(TEXT("DieEvent"));
+	void ATankPawn::DieEvent()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_ATankPawn_DieEvent),NULL);
+	}
 	void ATankPawn::StaticRegisterNativesATankPawn()
 	{
 		UClass* Class = ATankPawn::StaticClass();
@@ -97,6 +102,28 @@ void EmptyLinkFunctionForGeneratedCodeTankPawn() {}
 			{ "SetPatrollingPoints", &ATankPawn::execSetPatrollingPoints },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ATankPawn_DieEvent_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATankPawn_DieEvent_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "TankPawn.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ATankPawn_DieEvent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATankPawn, nullptr, "DieEvent", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ATankPawn_DieEvent_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ATankPawn_DieEvent_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ATankPawn_DieEvent()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ATankPawn_DieEvent_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_ATankPawn_GetMovementAccurency_Statics
 	{
@@ -367,6 +394,7 @@ void EmptyLinkFunctionForGeneratedCodeTankPawn() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_Tank,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ATankPawn_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ATankPawn_DieEvent, "DieEvent" }, // 2402181884
 		{ &Z_Construct_UFunction_ATankPawn_GetMovementAccurency, "GetMovementAccurency" }, // 2650688297
 		{ &Z_Construct_UFunction_ATankPawn_GetPatrolligPoints, "GetPatrolligPoints" }, // 1077459628
 		{ &Z_Construct_UFunction_ATankPawn_GetTurretForwardVector, "GetTurretForwardVector" }, // 3734870038
@@ -593,9 +621,9 @@ void EmptyLinkFunctionForGeneratedCodeTankPawn() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OfficeTank_Source_Tank_TankPawn_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ATankPawn, ATankPawn::StaticClass, TEXT("ATankPawn"), &Z_Registration_Info_UClass_ATankPawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATankPawn), 1573888142U) },
+		{ Z_Construct_UClass_ATankPawn, ATankPawn::StaticClass, TEXT("ATankPawn"), &Z_Registration_Info_UClass_ATankPawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATankPawn), 3753365313U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OfficeTank_Source_Tank_TankPawn_h_1102001215(TEXT("/Script/Tank"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OfficeTank_Source_Tank_TankPawn_h_1642612089(TEXT("/Script/Tank"),
 		Z_CompiledInDeferFile_FID_OfficeTank_Source_Tank_TankPawn_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OfficeTank_Source_Tank_TankPawn_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

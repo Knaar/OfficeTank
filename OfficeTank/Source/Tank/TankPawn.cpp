@@ -77,6 +77,7 @@ void ATankPawn::Die()
 		{
 			Cannon->Destroy();
 		}
+		DieEvent();
 		OnGameOver.Broadcast();
 		bTankAlive = false;
 		//Destroy();

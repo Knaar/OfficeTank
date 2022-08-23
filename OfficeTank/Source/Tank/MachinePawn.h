@@ -23,6 +23,9 @@ public:
 
 	virtual void TakeDamage(FDamageData DamageData)override;
 
+	UFUNCTION(BlueprintImplementableEvent)
+	void TakeDamageEvent();
+
 	void Fire();
 
 	void FireSpecial();
