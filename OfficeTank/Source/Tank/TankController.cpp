@@ -19,6 +19,8 @@ void ATankController::SetupInputComponent()
 	InputComponent->BindAction("Fire",EInputEvent::IE_Pressed,this,&ATankController::Fire);
 	InputComponent->BindAction("FireSpecial",EInputEvent::IE_Pressed,this,&ATankController::FireSpecial);
 	InputComponent->BindAction("SwapWeapon", EInputEvent::IE_Pressed, this, &ATankController::SwapWeapon);
+	InputComponent->BindKey(EKeys::LeftMouseButton,EInputEvent::IE_Released,this,&ThisClass::OnLeftMouseButtonReleased);
+	
 }
 
 void ATankController::Tick(float DeltaSeconds)
@@ -93,4 +95,9 @@ void ATankController::SwapWeapon()
 	{
 		TankPawn->SwapWeapon();
 	}
+}
+
+void ATankController::OnLeftMouseButtonReleased()
+{
+	OnMouseButtonReleased.Broadcast();
 }

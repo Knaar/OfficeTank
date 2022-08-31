@@ -14,9 +14,12 @@
  UENUM()
 	 enum class EWidgetID : uint8
  {
-	 None,
-	 WidMainMenu,
-	 WidDeath
+	None,
+ 	WidPause,
+ 	WidHealthBar,
+	WidMainMenu,
+ 	WidDeath,
+ 	WidInventory
  };
 
 UCLASS()

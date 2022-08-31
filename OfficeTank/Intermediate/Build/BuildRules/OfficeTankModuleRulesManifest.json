@@ -1,6 +1,12 @@
 {
 	"SourceFiles": [
 		"E:\\UnrealProjects\\OfficeTank\\OfficeTank\\Source\\Tank\\Tank.Build.cs",
+		"E:\\UnrealProjects\\OfficeTank\\OfficeTank\\Plugins\\Developer\\RiderLink\\Source\\RD\\RD.Build.cs",
+		"E:\\UnrealProjects\\OfficeTank\\OfficeTank\\Plugins\\Developer\\RiderLink\\Source\\RiderBlueprint\\RiderBlueprint.Build.cs",
+		"E:\\UnrealProjects\\OfficeTank\\OfficeTank\\Plugins\\Developer\\RiderLink\\Source\\RiderGameControl\\RiderGameControl.Build.cs",
+		"E:\\UnrealProjects\\OfficeTank\\OfficeTank\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\RiderLink.Build.cs",
+		"E:\\UnrealProjects\\OfficeTank\\OfficeTank\\Plugins\\Developer\\RiderLink\\Source\\RiderLogging\\RiderLogging.Build.cs",
+		"E:\\UnrealProjects\\OfficeTank\\OfficeTank\\Plugins\\Developer\\RiderLink\\Source\\RiderShaderInfo\\RiderShaderInfo.Build.cs",
 		"E:\\UnrealProjects\\OfficeTank\\OfficeTank\\Source\\Tank.Target.cs",
 		"E:\\UnrealProjects\\OfficeTank\\OfficeTank\\Source\\TankEditor.Target.cs"
 	],

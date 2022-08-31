@@ -41,4 +41,9 @@ protected:
 	UFUNCTION()
 	void FireSpecial();
 	void SwapWeapon();
+public:
+	
+	FSimpleMulticastDelegate OnMouseButtonReleased;
+
+	void OnLeftMouseButtonReleased();
 };

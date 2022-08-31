@@ -15,22 +15,22 @@ enum class EWidgetID : uint8;
 #endif
 #define TANK_MyHUD_generated_h
 
-#define FID_OfficeTank_Source_Tank_MyHUD_h_25_SPARSE_DATA
-#define FID_OfficeTank_Source_Tank_MyHUD_h_25_RPC_WRAPPERS \
+#define FID_OfficeTank_Source_Tank_MyHUD_h_28_SPARSE_DATA
+#define FID_OfficeTank_Source_Tank_MyHUD_h_28_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetCurrentWidget); \
 	DECLARE_FUNCTION(execHideWidget); \
 	DECLARE_FUNCTION(execShowWidget);
 
 
-#define FID_OfficeTank_Source_Tank_MyHUD_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_OfficeTank_Source_Tank_MyHUD_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetCurrentWidget); \
 	DECLARE_FUNCTION(execHideWidget); \
 	DECLARE_FUNCTION(execShowWidget);
 
 
-#define FID_OfficeTank_Source_Tank_MyHUD_h_25_INCLASS_NO_PURE_DECLS \
+#define FID_OfficeTank_Source_Tank_MyHUD_h_28_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMyHUD(); \
 	friend struct Z_Construct_UClass_AMyHUD_Statics; \
@@ -39,7 +39,7 @@ public: \
 	DECLARE_SERIALIZER(AMyHUD)
 
 
-#define FID_OfficeTank_Source_Tank_MyHUD_h_25_INCLASS \
+#define FID_OfficeTank_Source_Tank_MyHUD_h_28_INCLASS \
 private: \
 	static void StaticRegisterNativesAMyHUD(); \
 	friend struct Z_Construct_UClass_AMyHUD_Statics; \
@@ -48,7 +48,7 @@ public: \
 	DECLARE_SERIALIZER(AMyHUD)
 
 
-#define FID_OfficeTank_Source_Tank_MyHUD_h_25_STANDARD_CONSTRUCTORS \
+#define FID_OfficeTank_Source_Tank_MyHUD_h_28_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AMyHUD(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMyHUD) \
@@ -61,7 +61,7 @@ private: \
 public:
 
 
-#define FID_OfficeTank_Source_Tank_MyHUD_h_25_ENHANCED_CONSTRUCTORS \
+#define FID_OfficeTank_Source_Tank_MyHUD_h_28_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AMyHUD(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -74,25 +74,25 @@ public: \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMyHUD)
 
 
-#define FID_OfficeTank_Source_Tank_MyHUD_h_22_PROLOG
-#define FID_OfficeTank_Source_Tank_MyHUD_h_25_GENERATED_BODY_LEGACY \
+#define FID_OfficeTank_Source_Tank_MyHUD_h_25_PROLOG
+#define FID_OfficeTank_Source_Tank_MyHUD_h_28_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OfficeTank_Source_Tank_MyHUD_h_25_SPARSE_DATA \
-	FID_OfficeTank_Source_Tank_MyHUD_h_25_RPC_WRAPPERS \
-	FID_OfficeTank_Source_Tank_MyHUD_h_25_INCLASS \
-	FID_OfficeTank_Source_Tank_MyHUD_h_25_STANDARD_CONSTRUCTORS \
+	FID_OfficeTank_Source_Tank_MyHUD_h_28_SPARSE_DATA \
+	FID_OfficeTank_Source_Tank_MyHUD_h_28_RPC_WRAPPERS \
+	FID_OfficeTank_Source_Tank_MyHUD_h_28_INCLASS \
+	FID_OfficeTank_Source_Tank_MyHUD_h_28_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_OfficeTank_Source_Tank_MyHUD_h_25_GENERATED_BODY \
+#define FID_OfficeTank_Source_Tank_MyHUD_h_28_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OfficeTank_Source_Tank_MyHUD_h_25_SPARSE_DATA \
-	FID_OfficeTank_Source_Tank_MyHUD_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_OfficeTank_Source_Tank_MyHUD_h_25_INCLASS_NO_PURE_DECLS \
-	FID_OfficeTank_Source_Tank_MyHUD_h_25_ENHANCED_CONSTRUCTORS \
+	FID_OfficeTank_Source_Tank_MyHUD_h_28_SPARSE_DATA \
+	FID_OfficeTank_Source_Tank_MyHUD_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_OfficeTank_Source_Tank_MyHUD_h_28_INCLASS_NO_PURE_DECLS \
+	FID_OfficeTank_Source_Tank_MyHUD_h_28_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -105,8 +105,11 @@ template<> TANK_API UClass* StaticClass<class AMyHUD>();
 
 #define FOREACH_ENUM_EWIDGETID(op) \
 	op(EWidgetID::None) \
+	op(EWidgetID::WidPause) \
+	op(EWidgetID::WidHealthBar) \
 	op(EWidgetID::WidMainMenu) \
-	op(EWidgetID::WidDeath) 
+	op(EWidgetID::WidDeath) \
+	op(EWidgetID::WidInventory) 
 
 enum class EWidgetID : uint8;
 template<> TANK_API UEnum* StaticEnum<EWidgetID>();

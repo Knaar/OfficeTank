@@ -117,7 +117,7 @@ void ATankAIController::Fire()
 
 bool ATankAIController::IsPlayerSeen()
 {
-	UE_LOG(LogTemp, Warning, TEXT("TryToFire"));
+	//UE_LOG(LogTemp, Warning, TEXT("TryToFire"));
 	if (!PlayerPawn)
 		Initialise();
 
