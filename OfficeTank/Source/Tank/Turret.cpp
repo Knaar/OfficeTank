@@ -15,8 +15,11 @@ ATurret::ATurret()
 {
 	PrimaryActorTick.bCanEverTick = true;
 
+	USceneComponent*RootSceneComponent=CreateDefaultSubobject<USceneComponent>("RootComponent");
+	RootComponent=RootSceneComponent;
+
 	BodyMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("TurretBody"));
-	RootComponent = BodyMesh;
+	BodyMesh->SetupAttachment(RootSceneComponent);
 
 	TurretMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("TurretTurret"));
 	TurretMesh->AttachToComponent(BodyMesh,FAttachmentTransformRules::KeepRelativeTransform);

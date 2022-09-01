@@ -25,7 +25,7 @@ protected:
 
 	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="AI | Movement")
 	TArray<FVector> PatrollingPoints;
-
+	
 	int32 CurrentPatrollingIndex = 0;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI | Movement")
@@ -49,6 +49,7 @@ protected:
 	bool IsPlayerInRange();
 	bool CanFire();
 	bool IsPlayerSeen();
+	bool bPatrillingPathIsSet;
 	void Fire();
 
 	

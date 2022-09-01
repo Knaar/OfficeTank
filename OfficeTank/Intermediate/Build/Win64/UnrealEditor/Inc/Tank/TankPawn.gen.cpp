@@ -561,7 +561,7 @@ void EmptyLinkFunctionForGeneratedCodeTankPawn() {}
 	{
 		((ATankPawn*)Obj)->bTankAlive = 1;
 	}
-	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ATankPawn_Statics::NewProp_bTankAlive = { "bTankAlive", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ATankPawn), &Z_Construct_UClass_ATankPawn_Statics::NewProp_bTankAlive_SetBit, METADATA_PARAMS(Z_Construct_UClass_ATankPawn_Statics::NewProp_bTankAlive_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATankPawn_Statics::NewProp_bTankAlive_MetaData)) };
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ATankPawn_Statics::NewProp_bTankAlive = { "bTankAlive", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ATankPawn), &Z_Construct_UClass_ATankPawn_Statics::NewProp_bTankAlive_SetBit, METADATA_PARAMS(Z_Construct_UClass_ATankPawn_Statics::NewProp_bTankAlive_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATankPawn_Statics::NewProp_bTankAlive_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATankPawn_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATankPawn_Statics::NewProp_OnGameOver,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATankPawn_Statics::NewProp_BodyMesh,
@@ -621,9 +621,9 @@ void EmptyLinkFunctionForGeneratedCodeTankPawn() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OfficeTank_Source_Tank_TankPawn_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ATankPawn, ATankPawn::StaticClass, TEXT("ATankPawn"), &Z_Registration_Info_UClass_ATankPawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATankPawn), 3753365313U) },
+		{ Z_Construct_UClass_ATankPawn, ATankPawn::StaticClass, TEXT("ATankPawn"), &Z_Registration_Info_UClass_ATankPawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATankPawn), 1220780791U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OfficeTank_Source_Tank_TankPawn_h_1642612089(TEXT("/Script/Tank"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OfficeTank_Source_Tank_TankPawn_h_2796914972(TEXT("/Script/Tank"),
 		Z_CompiledInDeferFile_FID_OfficeTank_Source_Tank_TankPawn_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OfficeTank_Source_Tank_TankPawn_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

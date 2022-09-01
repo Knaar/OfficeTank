@@ -125,7 +125,8 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI | Components")
 	float MovementAccurency =300.0f;
-
+public:
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
 	bool bTankAlive = true;
 

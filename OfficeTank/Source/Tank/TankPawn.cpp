@@ -146,7 +146,7 @@ void ATankPawn::BeginPlay()
 
 	TankController = Cast<ATankController>(GetController());
 	SetupCannon(CannonClass);
-	//Health=HealthComponent->GetHealth();
+	
 }
 
 void ATankPawn::SetupCannon(TSubclassOf<ACannon>NewCannonClass)
@@ -177,6 +177,10 @@ void ATankPawn::SetPatrollingPoints(TArray<ATargetPoint*> NewPatrollingPoint)
 TArray<FVector> ATankPawn::GetPatrolligPoints()
 {
 	TArray<FVector> SomePoints;
+	if (PatrollingPoints.Num()==0)
+	{
+		return SomePoints;
+	}
 	for (ATargetPoint * Points:PatrollingPoints)
 	{
 		SomePoints.Add(Points->GetActorLocation());
